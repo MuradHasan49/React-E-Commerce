@@ -1,11 +1,10 @@
 import React from "react";
-
 import { useState, useEffect } from "react";
 
 const BannerSlider = () => {
   const slides = [
-    "src/assets/BannerIMG/Banner.png",
-    "src/assets/BannerIMG/Banner.png",
+    "/public/Banner.png",
+    "/public/Banner.png",
   ];
 
   const [current, setCurrent] = useState(0);
@@ -70,7 +69,7 @@ const BannerSlider = () => {
         </div>
 
     <div >
-      <img src="/src/assets/banner-img/Line 4.png" alt="" />
+      <img src="/public/Line 4.png" alt="" />
     </div>
 
         <div className="bannerW overflow-hidden rounded-lg">
