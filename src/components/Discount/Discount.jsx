@@ -5,7 +5,7 @@ const Discount = () => {
     <>
       <div className="bg-black h-12">
         <div className="container xl: h-full mx-auto flex p-4 ">
-          <div className=" text-white h-full flex ml-auto text-center items-center gap-5">
+          <div className=" text-white h-full flex ml-auto text-center items-center gap-5 ">
             <p>
               Summer Sale For All Swim Suits And Free Express Delivery - OFF
               50%!
