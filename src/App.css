@@ -1,3 +1,11 @@
 @import "tailwindcss";
 
 
+.bannerW{
+    width: 1050px;
+}
+ul:hover{
+    color: #000000;
+    cursor: pointer;
+
+}
