@@ -5,9 +5,9 @@ const SalesCard = ({Discount,img,h2,price,DiscountPrice,rating}) => {
     <>
       <div className="container xl: mx-auto p-5">
         <div className="w-66 h-86 bg-amber-50 rounded-lg p-4">
-          <div className="h-62 w-full bg-amber-100 rounded-b-lg relative">
+          <div className="h-62 w-full bg-amber-100 rounded-lg relative">
             <img className="p-10 px-4" src={img} alt="" />
-            <div className="h-10 w-full bg-black text-white text-center pt-2 absolute bottom-0">Add To Cart</div>
+            <div className="h-10 w-full bg-black text-white text-center pt-2 absolute bottom-0  rounded-b-lg">Add To Cart</div>
             <span className="px-3 py-2 rounded-sm bg-red-700 text-white absolute top-2 left-2 ">
               {Discount}
             </span>
