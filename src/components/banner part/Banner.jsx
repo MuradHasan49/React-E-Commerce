@@ -120,7 +120,7 @@ const BannerSlider = () => {
                   key={index}
                   onClick={() => setCurrent(index)}
                   className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    current === index ? "bg-blue-600 scale-125" : "bg-gray-400"
+                    current === index ? "bg-yellow-500 scale-125" : "bg-gray-400"
                   }`}
                 />
               ))}
