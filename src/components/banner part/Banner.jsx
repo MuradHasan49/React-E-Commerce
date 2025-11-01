@@ -8,6 +8,7 @@ const BannerSlider = () => {
     "/src/assets/banner-img/Banner.png",
     "/src/assets/banner-img/Banner.png",
     "/src/assets/banner-img/Banner.png",
+
   ];
 
   const [current, setCurrent] = useState(0);
