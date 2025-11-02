@@ -103,6 +103,15 @@ const CardDetails = () => {
             totaled={88}
           />
           <SalesCard
+            Discount="-30%"
+            img="/Flash/monitor.png"
+            h2="IPS LCD Gaming Monitor"
+            price="$370"
+            DiscountPrice="$400"
+            rating={5}
+            totaled={88}
+          />
+          <SalesCard
             Discount="-25%"
             img="/Flash/chair.png"
             h2="S-Series Comfort Chair "
