@@ -1,6 +1,7 @@
 import './App.css'
-import All_head from './components/Allhead'
 import BannerSlider from './components/banner part/Banner'
+import BSDetails from './components/BestSellingProducts/BSDetails'
+import CategoryDetails from './components/Category/CategoryDetails'
 import Discount from './components/Discount/Discount'
 import CardDetails from './components/Flash Sales/CardDetails'
 import FlashHead from './components/Flash Sales/FlashHead'
@@ -15,8 +16,8 @@ function App() {
     <BannerSlider/>
     <FlashHead/>
     <CardDetails/>
-
-    <All_head head={"hello"} h1={"flash sales 2"}/>
+    <CategoryDetails/>
+    <BSDetails/>
     </>
   )
 }
