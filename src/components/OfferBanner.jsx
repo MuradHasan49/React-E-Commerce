@@ -13,24 +13,17 @@ const MusicExperience = () => {
       setTimeLeft((prevTime) => {
         const newTime = { ...prevTime };
 
-        if (newTime.seconds > 0) {
-          newTime.seconds--;
-        } else {
+        if (newTime.seconds > 0) newTime.seconds--;
+        else {
           newTime.seconds = 59;
-          if (newTime.minutes > 0) {
-            newTime.minutes--;
-          } else {
+          if (newTime.minutes > 0) newTime.minutes--;
+          else {
             newTime.minutes = 59;
-            if (newTime.hours > 0) {
-              newTime.hours--;
-            } else {
+            if (newTime.hours > 0) newTime.hours--;
+            else {
               newTime.hours = 23;
-              if (newTime.days > 0) {
-                newTime.days--;
-              } else {
-                // Countdown finished
-                clearInterval(timer);
-              }
+              if (newTime.days > 0) newTime.days--;
+              else clearInterval(timer);
             }
           }
         }
@@ -43,58 +36,46 @@ const MusicExperience = () => {
   }, []);
 
   return (
-    <section className="container xl: p-5 mx-auto">
-      <div className="flex gap-2 relative">
-        <img className="w-full " src="/Sell/Frame 600.png" alt="" />
+    <section className=" container xl: w-full mx-auto p-4 sm:p-6 md:p-10">
+      <div className="relative">
+        {/* Background Image */}
+        <img
+          className="w-full rounded-2xl object-cover h-[400px] sm:h-[500px] md:h-[600px]"
+          src="/Sell/Frame 600.png"
+          alt="Music Experience"
+        />
 
-        <div className="flex flex-col gap-10 justify-center absolute top-20 left-10">
-          <span className="text-sm font-semibold text-white uppercase tracking-wider mb-2">
+        {/* Overlay content */}
+        <div className="absolute inset-0 flex flex-col items-start justify-center text-left px-6 sm:px-10 md:px-16 gap-6 sm:gap-8">
+          <span className="text-xs sm:text-sm font-semibold text-white uppercase tracking-wider">
             Categories
           </span>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold text-white leading-tight drop-shadow-lg">
             Enhance Your
             <br />
-            <span className="text-gray-500">Music Experience</span>
+            <span className="text-gray-200">Music Experience</span>
           </h1>
 
           {/* Countdown Timer */}
-          <div className="grid grid-cols-4 gap-4 mb-8">
-            <div className="text-center">
-              <div className="bg-white rounded-lg shadow-md p-4">
-                <div className="text-2xl md:text-3xl font-bold text-gray-900">
-                  {timeLeft.days.toString().padStart(2, "0")}
+          <div className="grid grid-cols-4 gap-3 sm:gap-4 w-full max-w-xs sm:max-w-md">
+            {[
+              { label: "Days", value: timeLeft.days },
+              { label: "Hours", value: timeLeft.hours },
+              { label: "Minutes", value: timeLeft.minutes },
+              { label: "Seconds", value: timeLeft.seconds },
+            ].map((item, i) => (
+              <div key={i} className="text-center bg-white rounded-lg shadow-md p-2 sm:p-3">
+                <div className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">
+                  {item.value.toString().padStart(2, "0")}
                 </div>
-                <div className="text-xs text-gray-500 mt-1">Days</div>
+                <div className="text-[10px] sm:text-xs text-gray-500 mt-1">{item.label}</div>
               </div>
-            </div>
-            <div className="text-center">
-              <div className="bg-white rounded-lg shadow-md p-4">
-                <div className="text-2xl md:text-3xl font-bold text-gray-900">
-                  {timeLeft.hours.toString().padStart(2, "0")}
-                </div>
-                <div className="text-xs text-gray-500 mt-1">Hours</div>
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="bg-white rounded-lg shadow-md p-4">
-                <div className="text-2xl md:text-3xl font-bold text-gray-900">
-                  {timeLeft.minutes.toString().padStart(2, "0")}
-                </div>
-                <div className="text-xs text-gray-500 mt-1">Minutes</div>
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="bg-white rounded-lg shadow-md p-4">
-                <div className="text-2xl md:text-3xl font-bold text-gray-900">
-                  {timeLeft.seconds.toString().padStart(2, "0")}
-                </div>
-                <div className="text-xs text-gray-500 mt-1">Seconds</div>
-              </div>
-            </div>
+            ))}
           </div>
 
-          <button className="bg-red-600 hover:bg-red-700 text-white font-semibold py-4 px-8 rounded-lg transition duration-300 transform hover:scale-105 w-full md:w-auto">
+          {/* Button */}
+          <button className="mt-4 sm:mt-6 bg-red-600 hover:bg-red-700 text-white font-semibold py-3 sm:py-4 px-6 sm:px-10 rounded-lg transition duration-300 transform hover:scale-105">
             Buy Now!
           </button>
         </div>
