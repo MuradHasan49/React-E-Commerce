@@ -80,7 +80,7 @@ const FlashHead = () => {
           <div className="flex flex-col items-center">
             <span className="text-xs font-medium text-gray-600">Seconds</span>
             <span className="text-3xl font-bold text-black">
-              {timeLeft.seconds}
+              {timeLeft.seconds}<span className="text-red-600 opacity-0">:</span>
             </span>
           </div>
         </div>

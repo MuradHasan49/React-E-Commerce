@@ -5,8 +5,8 @@ import FirstBTN from "../button/FirstBTN.jsx";
 const CardDetails = () => {
   return (
     <>
-      <div className="relative w-full">
-        <div className="flex absolute bottom-103 right-55">
+      <div className="container xl: mx-auto relative p-5">
+        <div className="flex absolute bottom-115 right-15">
           <button
             onClick={() =>
               document.querySelector(".product-slider").scrollBy({
@@ -47,7 +47,34 @@ const CardDetails = () => {
         </div>
 
         {/* Slider Content */}
-        <div className="container xl:mx-auto flex gap-2 justify-center overflow-hidden scroll-smooth product-slider">
+        <div className="flex justify-center  overflow-hidden scroll-smooth product-slider">
+          <SalesCard
+            Discount="-40%"
+            img="/Flash/joy.png"
+            h2="HAVIT HV-G92 Gamepad"
+            price="$120"
+            DiscountPrice="$160"
+            rating={3}
+            totaled={40}
+          />
+          <SalesCard
+            Discount="-35%"
+            img="/Flash/keyboard.png"
+            h2="AK-900 Wired Keyboard"
+            price="$900"
+            DiscountPrice="$1160"
+            rating={5}
+            totaled={99}
+          />
+          <SalesCard
+            Discount="-30%"
+            img="/Flash/monitor.png"
+            h2="IPS LCD Gaming Monitor"
+            price="$370"
+            DiscountPrice="$400"
+            rating={5}
+            totaled={88}
+          />
           <SalesCard
             Discount="-40%"
             img="/Flash/joy.png"
@@ -111,16 +138,8 @@ const CardDetails = () => {
             rating={5}
             totaled={88}
           />
-          <SalesCard
-            Discount="-25%"
-            img="/Flash/chair.png"
-            h2="S-Series Comfort Chair "
-            price="$375"
-            DiscountPrice="$400"
-            rating={4}
-            totaled={50}
-          />
-          <SalesCard
+          
+               <SalesCard
             Discount="-40%"
             img="/Flash/joy.png"
             h2="HAVIT HV-G92 Gamepad"
@@ -137,15 +156,6 @@ const CardDetails = () => {
             DiscountPrice="$1160"
             rating={5}
             totaled={99}
-          />
-          <SalesCard
-            Discount="-30%"
-            img="/Flash/monitor.png"
-            h2="IPS LCD Gaming Monitor"
-            price="$370"
-            DiscountPrice="$400"
-            rating={5}
-            totaled={88}
           />
         </div>
       </div>
