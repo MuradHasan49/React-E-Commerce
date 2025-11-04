@@ -131,21 +131,22 @@ const BannerSlider = () => {
                   className="w-full h-auto object-cover"
                 />
 
-                <div className="absolute bottom-6 left-6 z-10 flex items-center gap-3 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-md shadow-md">
-                  <a
-                    href="#"
-                    className="text-gray-700 font-semibold hover:text-black transition-colors"
-                  >
-                    Shop Now
-                  </a>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 640 640"
-                    className="w-5 h-5 text-black fill-current"
-                  >
-                    <path d="M566.6 342.6C579.1 330.1 579.1 309.8 566.6 297.3L406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3C348.8 149.8 348.8 170.1 361.3 182.6L466.7 288H96c-17.7 0-32 14.3-32 32s14.3 32 32 32h370.7L361.3 457.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
-                  </svg>
-                </div>
+              <div className="absolute bottom-3 left-6 z-10 flex items-center gap-2 bg-white/80 backdrop-blur-sm px-2 py-1 md:px-4 md:py-2 lg:px-6 lg:py-3 rounded-md shadow-md">
+  <a
+    href="#"
+    className="text-gray-700 font-semibold text-sm md:text-base lg:text-lg hover:text-black transition-colors flex items-center gap-2"
+  >
+    Shop Now
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 640 640"
+      className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 text-black fill-current"
+    >
+      <path d="M566.6 342.6C579.1 330.1 579.1 309.8 566.6 297.3L406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3C348.8 149.8 348.8 170.1 361.3 182.6L466.7 288H96c-17.7 0-32 14.3-32 32s14.3 32 32 32h370.7L361.3 457.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+    </svg>
+  </a>
+</div>
+
               </div>
             ))}
           </div>
