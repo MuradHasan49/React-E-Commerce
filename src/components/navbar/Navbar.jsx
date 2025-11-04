@@ -54,7 +54,7 @@ const Navbar = () => {
 
         {/* Center Links (Desktop) */}
         <div className="hidden md:flex gap-8 font-semibold text-gray-700">
-          {["Home", "Contact", "About", "Sign Up", "Login"].map((link) => (
+          {["Home", "Contact", "About", "Sign Up",].map((link) => (
             <a
               key={link}
               href="#"
@@ -127,7 +127,7 @@ const Navbar = () => {
       {/* Mobile Menu Collapse */}
       {menuOpen && (
         <div className="md:hidden flex flex-col justify-center items-center bg-gray-50 border-t border-gray-300 p-4">
-          {["Home", "Contact", "About", "Sign Up", "Login"].map((link) => (
+          {["Home", "Contact", "About", "Sign Up",].map((link) => (
             <a
               key={link}
               href="#"
