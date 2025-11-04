@@ -52,36 +52,46 @@ const FlashHead = () => {
         <span className="text-red-600 font-semibold text-lg">Today’s</span>
       </div>
 
-      <div className="flex flex-wrap items-center justify-between">
+      <div className="flex flex-wrap items-center xl:gap-20 sm:flex gap-10 pb-5">
         <h1 className="text-3xl font-bold text-gray-900">Flash Sales</h1>
 
-        <div className="flex gap-6 items-center mr-180">
-          <div className="flex flex-col items-center">
-            <span className="text-xs font-medium text-gray-600  mr-4">Days</span>
-            <span className="text-3xl font-bold text-black">
-              {timeLeft.days} <span className="text-red-600">:</span>
-            </span>
-          </div>
+        <div className="">
+          <div className="flex gap-6 items-center">
+            <div className="flex flex-col items-center">
+              <span className="text-xs font-medium text-gray-600  mr-4">
+                Days
+              </span>
+              <span className="text-3xl font-bold text-black">
+                {timeLeft.days} <span className="text-red-600">:</span>
+              </span>
+            </div>
 
-          <div className="flex flex-col items-center">
-            <span className="text-xs font-medium text-gray-600 mr-4">Hours</span>
-            <span className="text-3xl font-bold text-black">
-              {timeLeft.hours} <span className="text-red-600">:</span>
-            </span>
-          </div>
+            <div className="flex flex-col items-center">
+              <span className="text-xs font-medium text-gray-600 mr-4">
+                Hours
+              </span>
+              <span className="text-3xl font-bold text-black">
+                {timeLeft.hours} <span className="text-red-600">:</span>
+              </span>
+            </div>
 
-          <div className="flex flex-col items-center">
-            <span className="text-xs font-medium text-gray-600 mr-4">Minutes</span>
-            <span className="text-3xl font-bold text-black">
-              {timeLeft.minutes} <span className="text-red-600">:</span>
-            </span>
-          </div>
+            <div className="flex flex-col items-center">
+              <span className="text-xs font-medium text-gray-600 mr-4">
+                Minutes
+              </span>
+              <span className="text-3xl font-bold text-black">
+                {timeLeft.minutes} <span className="text-red-600">:</span>
+              </span>
+            </div>
 
-          <div className="flex flex-col items-center">
-            <span className="text-xs font-medium text-gray-600 ">Seconds</span>
-            <span className="text-3xl font-bold text-black ">
-              {timeLeft.seconds}
-            </span>
+            <div className="flex flex-col items-center">
+              <span className="text-xs font-medium text-gray-600 ">
+                Seconds
+              </span>
+              <span className="text-3xl font-bold text-black ">
+                {timeLeft.seconds}
+              </span>
+            </div>
           </div>
         </div>
       </div>

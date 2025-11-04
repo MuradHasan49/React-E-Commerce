@@ -3,27 +3,41 @@ import React from "react";
 const Discount = () => {
   return (
     <>
-      <div className="bg-black h-12">
-        <div className="container xl: h-full mx-auto flex p-4 ">
-          <div className=" text-white h-full flex ml-auto text-center items-center gap-5 ">
+      <div className="bg-black h-12 flex items-center">
+        <div className="container mx-auto flex justify-between items-center px-4">
+          {/* ===== Text Section ===== */}
+          <div className="text-white flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-1 sm:gap-5 text-center sm:text-left font-semibold text-[12px] sm:text-[14px] md:text-[16px] xl:h-full">
             <p>
-              Summer Sale For All Swim Suits And Free Express Delivery - OFF
-              50%!
+              Summer Sale For All Swim Suits And Free Express Delivery -{" "}
+              <span className="text-yellow-400 font-bold">
+                OFF 50%!
+                {/* Show inline "Shop Now" only on small screens */}
+                <a
+                  href="#"
+                  className="ml-1 font-bold underline-offset-4 hover:underline transition-all duration-300 ease-in-out sm:hidden"
+                >
+                  Shop Now
+                </a>
+              </span>
             </p>
+
+            {/* Separate "Shop Now" for larger screens */}
             <a
-              className="font-bold underline-offset-4 hover:underline transition-all duration-300 ease-in-out"
-              href=""
+              href="#"
+              className="hidden sm:inline-block font-bold underline-offset-4 hover:underline transition-all duration-300 ease-in-out"
             >
-              ShopNow
+              Shop Now
             </a>
           </div>
-          <div className="ml-auto h-full flex justify-end items-center gap-3">
-            <select className=" text-white px-4 py-2 rounded-lg focus:outline-none focus:ring-0 focus:ring-blue-200 cursor-pointer">
+
+          {/* ===== Language Selector ===== */}
+          <div className="flex items-center">
+            <select className="bg-transparent text-white px-2 py-1 text-sm sm:text-base rounded-lg focus:outline-none focus:ring-0 cursor-pointer">
               <option className="bg-gray-700 text-white" value="en">
                 English
               </option>
               <option className="bg-gray-700 text-white" value="bn">
-                Bangla
+                বাংলা
               </option>
             </select>
           </div>

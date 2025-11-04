@@ -160,20 +160,22 @@ const CardDetails = () => {
     <>
       <div className="container mx-auto p-5 relative">
         {/* Custom buttons on top */}
-        <div className="flex justify-end gap-2 mb-3 absolute -top-15 right-10 z-10">
-          <button
-            onClick={() => swiperRef.current.swiper.slidePrev()}
-            className="bg-gray-400 hover:bg-gray-500 text-black rounded-full p-2 shadow-md"
-          >
-            &#8592;
-          </button>
-          <button
-            onClick={() => swiperRef.current.swiper.slideNext()}
-            className="bg-gray-400 hover:bg-gray-500 text-black rounded-full p-2 shadow-md"
-          >
-            &#8594;
-          </button>
-        </div>
+
+<div className="flex justify-end gap-3 mb-3 absolute -top-3 right-10 z-10">
+  <button
+    onClick={() => swiperRef.current.swiper.slideNext()}
+    className="bg-gray-400 hover:bg-gray-500 text-black rounded-md w-15 h-10 text-3xl shadow-lg transition-all duration-300 ease-in-out hover:scale-110"
+  >
+    &#8592;
+  </button>
+  <button
+    onClick={() => swiperRef.current.swiper.slidePrev()}
+    className="bg-gray-400 hover:bg-gray-500 text-black rounded-md w-15 h-10 text-3xl shadow-lg transition-all duration-300 ease-in-out hover:scale-110"
+  >
+    &#8594;
+  </button>
+</div>
+
 
         <Swiper
           ref={swiperRef}
@@ -182,7 +184,7 @@ const CardDetails = () => {
           breakpoints={{
             320: { slidesPerView: 1, spaceBetween: 5 }, // mobile
             480: { slidesPerView: 1, spaceBetween: 5 },
-            640: { slidesPerView: 1, spaceBetween: 5 },
+            640: { slidesPerView: 2, spaceBetween: 5 },
             768: { slidesPerView: 2, spaceBetween: 5 },
             1024: { slidesPerView: 3, spaceBetween: 5 },
             1280: { slidesPerView: 4, spaceBetween: 5 }, // large screens
