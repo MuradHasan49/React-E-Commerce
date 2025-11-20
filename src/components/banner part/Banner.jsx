@@ -2,6 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import BannerImg from "../../assets/BannerIMG/Banner.png"
+
 
 const BannerSlider = () => {
   // Static Slider Config
@@ -61,19 +63,19 @@ const BannerSlider = () => {
         <Slider {...settings}>
           <div>
             {" "}
-            <img className="w-full" src="/public/Banner.png" alt="" />
+            <img className="w-full" src={BannerImg} alt="" />
           </div>
           <div>
             {" "}
-            <img className="w-full" src="/public/Banner.png" alt="" />
+            <img className="w-full" src={BannerImg} alt="" />
           </div>
           <div>
             {" "}
-            <img className="w-full" src="/public/Banner.png" alt="" />
+            <img className="w-full" src={BannerImg} alt="" />
           </div>
           <div>
             {" "}
-            <img className="w-full" src="/public/Banner.png" alt="" />
+            <img className="w-full" src={BannerImg} alt="" />
           </div>
         </Slider>
       </div>
