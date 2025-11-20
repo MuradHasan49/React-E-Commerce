@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import BannerImg from "../../assets/BannerIMG/Banner.png"
-
+import { IoIosArrowForward } from "react-icons/io";
 
 const BannerSlider = () => {
   // Static Slider Config
@@ -24,8 +24,14 @@ const BannerSlider = () => {
 
         {/* EXTRA CATEGORY LIST — NO MAP USED */}
         <ul className="space-y-2 mt-1 flex flex-col justify-between h-full text-xl">
-          <li>Woman’s Fashion</li>
-          <li>Men’s Fashion</li>
+          <div className="flex items-center gap-5">
+          <li>Woman’s Fashion </li>
+            <IoIosArrowForward />
+          </div>
+          <div className="flex items-center gap-5">
+          <li>Men’s Fashion </li>
+            <IoIosArrowForward />
+          </div>
           <li>Electronics</li>
           <li>Home & Lifestyle</li>
           <li>Medicine</li>
