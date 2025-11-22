@@ -5,6 +5,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import SalesCard from "./SalesCard.jsx";
 import FirstBTN from "../button/FirstBTN.jsx";
+import { IoMdArrowForward } from "react-icons/io";
+import { IoMdArrowBack } from "react-icons/io";
 
 const CardDetails = () => {
   const swiperRef = useRef(null);
@@ -164,15 +166,15 @@ const CardDetails = () => {
 <div className="flex justify-end gap-3 mb-3 absolute -top-3 right-10 z-10">
   <button
     onClick={() => swiperRef.current.swiper.slideNext()}
-    className="bg-gray-400 hover:bg-gray-500 text-black rounded-md w-15 h-10 text-3xl shadow-lg transition-all duration-300 ease-in-out hover:scale-110"
+    className="text-3xl w-[46px] h-[46px] rounded-full bg-[#F5F5F5] flex items-center justify-center shadow-lg transition-all duration-300 ease-in-out hover:scale-110"
   >
-    &#8592;
+   <IoMdArrowBack className="" />
   </button>
   <button
     onClick={() => swiperRef.current.swiper.slidePrev()}
-    className="bg-gray-400 hover:bg-gray-500 text-black rounded-md w-15 h-10 text-3xl shadow-lg transition-all duration-300 ease-in-out hover:scale-110"
+    className="text-3xl w-[46px] h-[46px] rounded-full bg-[#F5F5F5] flex items-center justify-center shadow-lg transition-all duration-300 ease-in-out hover:scale-110"
   >
-    &#8594;
+    <IoMdArrowForward />
   </button>
 </div>
 
