@@ -1,13 +1,12 @@
 import React from "react";
 import { MdAddIcCall } from "react-icons/md";
 import { AiOutlineMail } from "react-icons/ai";
-import FirstBTN from "../components/button/FirstBTN";
 import SecondBTN from "../components/button/SecondBTN";
 const Contact = () => {
   return (
     <>
       <div className="flex flex-col items-center md:flex gap-[30px] py-32 md:flex-row md:justify-center">
-        
+
         {/* left side */}
         <div className=" p-5 md:p-10 rounded-[10px] border border-[#E0E0E0] shadow-lg ">
           <div className="w-[270px] h-full flex flex-col justify-between">
