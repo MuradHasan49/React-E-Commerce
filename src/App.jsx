@@ -7,7 +7,7 @@ import OurProductsDetails from './components/ExploreOurProducts/OurProductsDetai
 import CardDetails from './components/Flash Sales/CardDetails'
 import FlashHead from './components/Flash Sales/FlashHead'
 import Footer from './components/Footer/Footer'
-import Navbar from './components/navbar/Navbar'
+import Navbar from './components/Navbar/Navbar'
 import NewArrivalDetails from './components/NewArrival/NewArrivalDetails'
 import MusicExperience from './components/OfferBanner'
 import SupportDetails from './components/support/SupportDetails'
@@ -16,8 +16,6 @@ function App() {
 
   return (
     <>
-    <Discount/>
-    <Navbar/>
     <BannerSlider/>
     <FlashHead/>
     <CardDetails/>
@@ -27,8 +25,6 @@ function App() {
     <OurProductsDetails/>
     <NewArrivalDetails/>
     <SupportDetails/>
-    <Footer/>
-
     </>
   )
 }
