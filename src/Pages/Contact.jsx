@@ -7,6 +7,7 @@ const Contact = () => {
   return (
     <>
       <div className="flex flex-col items-center md:flex gap-[30px] py-32 md:flex-row md:justify-center">
+        {/* left side */}
         <div className=" p-5 md:p-10 rounded-[10px] border border-[#E0E0E0] shadow-lg ">
           <div className="w-[270px] h-full flex flex-col justify-between">
             <div className="">
@@ -35,6 +36,7 @@ const Contact = () => {
           </div>
         </div>
 
+        
         <div className="flex flex-col items-end p-8 rounded-[10px] border border-[#E0E0E0] shadow-lg">
           <div className="w-full md:w-[737px] md:h-[377px]">
             {/* Input Row */}
@@ -61,7 +63,6 @@ const Contact = () => {
               />
             </div>
 
-            {/* Message Box */}
             <div className="py-8">
               <textarea
                 className="w-full md:h-[207px] outline-none bg-[#F5F5F5] 
@@ -71,7 +72,6 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Button */}
           <div>
             <SecondBTN BTNtext={"Send Massage"} />
           </div>
