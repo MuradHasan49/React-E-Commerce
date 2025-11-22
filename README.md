@@ -6,7 +6,7 @@ This project showcases a clean user interface, smooth user experience, and a str
 
 ## 🚀 Live Demo
 
-👉 **[Visit the Live Site](https://e-commerce-4.netlify.app/)**
+👉 **[Visit the Live Site](https://exclusive0.netlify.app/)**
 
 
 ## 🧰 Tech Stack
