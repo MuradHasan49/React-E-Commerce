@@ -190,7 +190,7 @@ const CardDetails = () => {
             768: { slidesPerView: 2, spaceBetween: 5 },
             1024: { slidesPerView: 3, spaceBetween: 5 },
             1280: { slidesPerView: 4, spaceBetween: 5 }, // large screens
-            1536: { slidesPerView: 5, spaceBetween: 5 }, // extra large
+            1536: { slidesPerView: 4, spaceBetween: 5 }, // extra large
           }}
         >
           {cards.map((card, idx) => (
