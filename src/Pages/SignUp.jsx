@@ -1,6 +1,7 @@
 import React from "react";
 import SideImg from "../assets/Pages/Side Image (1).png";
 import { FcGoogle } from "react-icons/fc";
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
   return (
@@ -32,7 +33,7 @@ const SignUp = () => {
 
           <div className="flex gap-2 items-center justify-center mt-6 group">
             <p>Already have account?</p>
-            <a className="group-hover:underline group-hover:underline-offset-4" href="#">Log in </a>
+            <Link className="group-hover:underline group-hover:underline-offset-4" to="/Login">Log in </Link>
           </div>
         </div>
       </div>
