@@ -143,7 +143,7 @@ const About = () => {
           <SupportDetails />
         </div>
       </div>
-
+      {/* slider dot styling */}
       <style jsx>{`
         .slick-dots {
           bottom: -80px !important;
