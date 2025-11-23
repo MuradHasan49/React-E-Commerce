@@ -7,6 +7,7 @@ import Layout from "./Layout.jsx"
 
 import Contact from "./Pages/Contact.jsx";
 import About from "./Pages/About/About.jsx";
+import SignUp from "./Pages/SignUp.jsx";
 
 // main.jsx
 const router1 = createBrowserRouter([
@@ -16,7 +17,8 @@ const router1 = createBrowserRouter([
     children: [
       { index: true, Component: App },     
       { path: "contact", Component: Contact },
-      { path: "About", Component: About } // Renders in Outlet
+      { path: "About", Component: About },
+      { path: "SignUp", Component: SignUp },
     ],
   }
 ]);
