@@ -1,4 +1,5 @@
 import React from "react";
+import Slider from "react-slick";
 import Img from "../../assets/Pages/Side Image.png";
 import AbCard from "./AbCard";
 
@@ -8,9 +9,18 @@ import Photo3 from "../../assets/Pages/Services (2).png";
 
 import AbCard2 from "./AbCard2";
 import Ph from "../../assets/Pages/Frame 874.png";
-
+import Ph2 from "../../assets/Pages/Frame 875.png";
+import Ph3 from "../../assets/Pages/Frame 876.png";
 
 const About = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+  };
+
   return (
     <>
       <div className="flex">
@@ -38,7 +48,6 @@ const About = () => {
       </div>
 
       <div className="container ">
-
         <div className="flex justify-between">
           <AbCard Photo={Photo} h1={"10.5k "} p={"Sallers active our site"} />
           <AbCard Photo={Photo} h1={"33k "} p={"Mopnthly Produduct Sale"} />
@@ -54,24 +63,66 @@ const About = () => {
           />
         </div>
 
-        <div className="flex justify-between py-34">
-
-            <AbCard2
-            Img={Ph}
-            h1={"Tom Cruise"}
-            p={"Founder & Chairman"}
-            />
-            <AbCard2
-            Img={Ph}
-            h1={"Tom Cruise"}
-            p={"Founder & Chairman"}
-            />
-            <AbCard2
-            Img={Ph}
-            h1={"Tom Cruise"}
-            p={"Founder & Chairman"}
-            />
+<div className="py-34">
+        <div className="slider-container">
+          <Slider {...settings}>
+            <div>
+              <AbCard2 Img={Ph} h1={"Tom Cruise"} p={"Founder & Chairman"} />
+            </div>
+            <div>
+              <AbCard2 Img={Ph2} h1={"Emma Watson"} p={"Managing Director"} />
+            </div>
+            <div>
+              <AbCard2 Img={Ph3} h1={"Will Smith"} p={"Product Designer"} />
+            </div>
+            <div>
+              <AbCard2 Img={Ph} h1={"Tom Cruise"} p={"Founder & Chairman"} />
+            </div>
+            <div>
+              <AbCard2 Img={Ph2} h1={"Emma Watson"} p={"Managing Director"} />
+            </div>
+            <div>
+              <AbCard2 Img={Ph3} h1={"Will Smith"} p={"Product Designer"} />
+            </div>
+            <div>
+              <AbCard2 Img={Ph} h1={"Tom Cruise"} p={"Founder & Chairman"} />
+            </div>
+            <div>
+              <AbCard2 Img={Ph2} h1={"Emma Watson"} p={"Managing Director"} />
+            </div>
+            <div>
+              <AbCard2 Img={Ph3} h1={"Will Smith"} p={"Product Designer"} />
+            </div>
+            <div>
+              <AbCard2 Img={Ph} h1={"Tom Cruise"} p={"Founder & Chairman"} />
+            </div>
+            <div>
+              <AbCard2 Img={Ph2} h1={"Emma Watson"} p={"Managing Director"} />
+            </div>
+            <div>
+              <AbCard2 Img={Ph3} h1={"Will Smith"} p={"Product Designer"} />
+            </div>
+            <div>
+              <AbCard2 Img={Ph} h1={"Tom Cruise"} p={"Founder & Chairman"} />
+            </div>
+            <div>
+              <AbCard2 Img={Ph2} h1={"Emma Watson"} p={"Managing Director"} />
+            </div>
+            <div>
+              <AbCard2 Img={Ph3} h1={"Will Smith"} p={"Product Designer"} />
+            </div>
+            <div>
+              <AbCard2 Img={Ph} h1={"Tom Cruise"} p={"Founder & Chairman"} />
+            </div>
+            <div>
+              <AbCard2 Img={Ph2} h1={"Emma Watson"} p={"Managing Director"} />
+            </div>
+            <div>
+              <AbCard2 Img={Ph3} h1={"Will Smith"} p={"Product Designer"} />
+            </div>
+          </Slider>
         </div>
+      </div>
       </div>
     </>
   );
