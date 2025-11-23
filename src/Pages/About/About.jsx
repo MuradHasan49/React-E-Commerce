@@ -14,27 +14,26 @@ import Ph3 from "../../assets/Pages/Frame 876.png";
 import SupportDetails from "../../components/support/SupportDetails";
 
 const About = () => {
-const settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 3,
-  slidesToScroll: 3,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  pauseOnHover: true,
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
 
-  responsive: [
-    {
-      breakpoint: 768, // below 768px = phone/tablet
-      settings: {
-        slidesToShow: 1, // show 1 slide on phone
-        slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768, // below 768px = phone/tablet
+        settings: {
+          slidesToShow: 1, // show 1 slide on phone
+          slidesToScroll: 1,
+        },
       },
-    },
-  ],
-};
-
+    ],
+  };
 
   return (
     <>
@@ -78,6 +77,7 @@ const settings = {
           />
         </div>
 
+        {/* slider content */}
         <div className="py-34 ">
           <div className="slider-container p-[30px] md:p-0">
             <Slider className="" {...settings}>
