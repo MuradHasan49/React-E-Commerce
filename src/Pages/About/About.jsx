@@ -6,6 +6,10 @@ import Photo from "../../assets/Pages/Services.png";
 import Photo2 from "../../assets/Pages/Services (1).png";
 import Photo3 from "../../assets/Pages/Services (2).png";
 
+import AbCard2 from "./AbCard2";
+import Ph from "../../assets/Pages/Frame 874.png";
+
+
 const About = () => {
   return (
     <>
@@ -50,9 +54,23 @@ const About = () => {
           />
         </div>
 
-        <div className="">
+        <div className="flex justify-between py-34">
 
-            
+            <AbCard2
+            Img={Ph}
+            h1={"Tom Cruise"}
+            p={"Founder & Chairman"}
+            />
+            <AbCard2
+            Img={Ph}
+            h1={"Tom Cruise"}
+            p={"Founder & Chairman"}
+            />
+            <AbCard2
+            Img={Ph}
+            h1={"Tom Cruise"}
+            p={"Founder & Chairman"}
+            />
         </div>
       </div>
     </>
