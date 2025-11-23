@@ -28,7 +28,7 @@ const About = () => {
       {
         breakpoint: 768, // below 768px = phone/tablet
         settings: {
-          slidesToShow: 1, // show 1 slide on phone
+          slidesToShow: 1, 
           slidesToScroll: 1,
         },
       },
