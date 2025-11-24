@@ -37,19 +37,19 @@ const ProfileMenu = () => {
       {open && (
         <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg border border-gray-200 z-50">
           <ul className="flex flex-col py-2">
-            <li className="px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer transition-colors">
+            <Link to="/Error"> <li className="px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer transition-colors">
               My Account
-            </li>
-            <li className="px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer transition-colors">
+            </li></Link>
+            <Link to="/Error"> <li className="px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer transition-colors">
               My Orders
-            </li>
-            <li className="px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer transition-colors">
+            </li></Link>
+            <Link to="/Error"> <li className="px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer transition-colors">
               My Cancellations
-            </li>
-            <li className="px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer transition-colors">
+            </li></Link>
+            <Link to="/Error"> <li className="px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer transition-colors">
               My Reviews
-            </li>
-            <Link to="#">
+            </li></Link>
+            <Link to="/Error">
               {" "}
               <li className="px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer transition-colors">
                 Logout
@@ -137,12 +137,12 @@ const Navbar = () => {
             />
             {/* Search icon as button */}
             <div className="">
-              <button className="p-1 hover:bg-gray-100 rounded-full transition-colors">
+              <Link to={"/Error"}> <button className="p-1 hover:bg-gray-100 rounded-full transition-colors">
                 <HiOutlineEye className="w-6 h-6 cursor-pointer" />
-              </button>
-              <button className="p-1 hover:bg-gray-100 rounded-full transition-colors">
+              </button></Link>
+            <Link to={"/Error"}> <button className="p-1 hover:bg-gray-100 rounded-full transition-colors">
                 <PiShoppingCartBold className="w-6 h-6 cursor-pointer" />
-              </button>
+              </button></Link>
             </div>
 
             <ProfileMenu />
@@ -192,7 +192,6 @@ const Navbar = () => {
       {/* Mobile Menu Collapse */}
       {menuOpen && (
         <div className="md:hidden flex flex-col justify-center items-center bg-gray-50 border-t border-gray-300 p-4">
-          {/* FIXED: Using Link instead of a */}
           <Link
             to="/"
             className="block py-2 font-semibold text-gray-700 hover:text-black"
@@ -212,7 +211,7 @@ const Navbar = () => {
             About
           </Link>
           <Link
-            to="SignUp"
+            to="/SignUp"
             className="block py-2 font-semibold text-gray-700 hover:text-black"
           >
             Sign Up

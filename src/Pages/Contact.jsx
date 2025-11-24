@@ -47,14 +47,14 @@ const Contact = () => {
               />
 
               <input
-                className="w-full md:w-[245px] md:h-[50px] bg-[#F5F5F5] p-4"
+                className="w-full md:w-[245px] outline-none md:h-[50px] bg-[#F5F5F5] p-4"
                 type="email"
                 placeholder="Your Email *"
                 required
               />
 
               <input
-                className="w-full md:w-[245px] md:h-[50px] bg-[#F5F5F5] p-4"
+                className="w-full md:w-[245px] outline-none md:h-[50px] bg-[#F5F5F5] p-4"
                 type="text"
                 placeholder="Your Phone *"
                 required

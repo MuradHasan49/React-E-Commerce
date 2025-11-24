@@ -9,9 +9,10 @@ import Contact from "./Pages/Contact.jsx";
 import About from "./Pages/About/About.jsx";
 import SignUp from "./Pages/SignUp.jsx";
 import Login from "./Pages/Login.jsx";
+import Error from "./Pages/Error.jsx";
 
 // main.jsx
-const router1 = createBrowserRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     Component: Layout, // ← Uses your Layout component
@@ -21,12 +22,13 @@ const router1 = createBrowserRouter([
       { path: "About", Component: About },
       { path: "SignUp", Component: SignUp },
       { path: "Login", Component: Login },
+      { path: "Error", Component: Error },
     ],
   }
 ]);
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router1} />
+    <RouterProvider router={router} />
   </StrictMode>
 );
 
