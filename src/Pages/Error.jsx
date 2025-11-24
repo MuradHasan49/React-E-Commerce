@@ -14,7 +14,6 @@ const Error = () => {
             Your visited page not found. You may go home page.
           </p>
         </div>
-
         <Link to={"/"}>
           <SecondBTN BTNtext={"Back to home page"} />
         </Link>
