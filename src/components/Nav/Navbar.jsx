@@ -37,18 +37,30 @@ const ProfileMenu = () => {
       {open && (
         <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg border border-gray-200 z-50">
           <ul className="flex flex-col py-2">
-            <Link to="/Error"> <li className="px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer transition-colors">
-              My Account
-            </li></Link>
-            <Link to="/Error"> <li className="px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer transition-colors">
-              My Orders
-            </li></Link>
-            <Link to="/Error"> <li className="px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer transition-colors">
-              My Cancellations
-            </li></Link>
-            <Link to="/Error"> <li className="px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer transition-colors">
-              My Reviews
-            </li></Link>
+            <Link to="/Error">
+              {" "}
+              <li className="px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer transition-colors">
+                My Account
+              </li>
+            </Link>
+            <Link to="/Error">
+              {" "}
+              <li className="px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer transition-colors">
+                My Orders
+              </li>
+            </Link>
+            <Link to="/Error">
+              {" "}
+              <li className="px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer transition-colors">
+                My Cancellations
+              </li>
+            </Link>
+            <Link to="/Error">
+              {" "}
+              <li className="px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer transition-colors">
+                My Reviews
+              </li>
+            </Link>
             <Link to="/Error">
               {" "}
               <li className="px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer transition-colors">
@@ -104,22 +116,44 @@ const Navbar = () => {
         {/* Center Links (Desktop) */}
         <div className="hidden md:flex gap-8 font-semibold text-gray-700">
           <ul className="flex gap-4 lg:gap-12">
-            <li>
+            <li
+              className=" py-1 text-gray-700 cursor-pointer 
+                    relative 
+                    after:content-[''] after:absolute after:left-0 after:bottom-0 
+                    after:h-[2px] after:bg-gray-600 after:w-0 
+                    after:transition-all after:duration-300 
+                    hover:after:w-full"
+            >
               <Link to="/" className="hover:text-black">
                 Home
               </Link>
             </li>
-            <li>
+            <li className="py-1 text-gray-700  cursor-pointer 
+                    relative 
+                    after:content-[''] after:absolute after:left-0 after:bottom-0 
+                    after:h-[2px] after:bg-gray-600 after:w-0 
+                    after:transition-all after:duration-300 
+                    hover:after:w-full">
               <Link to="/contact" className="hover:text-black">
                 Contact
               </Link>
             </li>
-            <li>
+            <li className="py-1 text-gray-700  cursor-pointer 
+                    relative 
+                    after:content-[''] after:absolute after:left-0 after:bottom-0 
+                    after:h-[2px] after:bg-gray-600 after:w-0 
+                    after:transition-all after:duration-300 
+                    hover:after:w-full">
               <Link to="/About" className="hover:text-black">
                 About
               </Link>
             </li>
-            <li>
+            <li className="py-1 text-gray-700  cursor-pointer 
+                    relative 
+                    after:content-[''] after:absolute after:left-0 after:bottom-0 
+                    after:h-[2px] after:bg-gray-600 after:w-0 
+                    after:transition-all after:duration-300 
+                    hover:after:w-full">
               <Link to="/SignUp" className="hover:text-black">
                 Sign Up
               </Link>
@@ -137,12 +171,18 @@ const Navbar = () => {
             />
             {/* Search icon as button */}
             <div className="">
-              <Link to={"/Error"}> <button className="p-1 hover:bg-gray-100 rounded-full transition-colors">
-                <HiOutlineEye className="w-6 h-6 cursor-pointer" />
-              </button></Link>
-            <Link to={"/Error"}> <button className="p-1 hover:bg-gray-100 rounded-full transition-colors">
-                <PiShoppingCartBold className="w-6 h-6 cursor-pointer" />
-              </button></Link>
+              <Link to={"/Error"}>
+                {" "}
+                <button className="p-1 hover:bg-gray-100 rounded-full transition-colors">
+                  <HiOutlineEye className="w-6 h-6 cursor-pointer" />
+                </button>
+              </Link>
+              <Link to={"/Error"}>
+                {" "}
+                <button className="p-1 hover:bg-gray-100 rounded-full transition-colors">
+                  <PiShoppingCartBold className="w-6 h-6 cursor-pointer" />
+                </button>
+              </Link>
             </div>
 
             <ProfileMenu />
