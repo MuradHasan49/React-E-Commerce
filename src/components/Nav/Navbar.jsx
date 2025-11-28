@@ -172,7 +172,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center gap-2">
             <input
               type="text"
-              placeholder=" What are you looking for? "
+              placeholder=" What are you looking for ? "
               className="w-65 h-10 px-2 py-4 rounded-lg border text-md border-gray-300 outline-none"
             />
             {/* Search icon as button */}
