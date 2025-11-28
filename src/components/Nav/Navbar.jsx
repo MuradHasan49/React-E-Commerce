@@ -285,7 +285,6 @@ const Navbar = () => {
 
         }
 
-     /
         .glass-list {
           list-style: none;
           margin: 0;
@@ -326,7 +325,6 @@ const Navbar = () => {
           padding-bottom: 14px;
         }
 
-        /* small accessibility: focus state */
         .glass-list li:focus {
           outline: none;
           background: rgba(255, 255, 255, 0.06);
